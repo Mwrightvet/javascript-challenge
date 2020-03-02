@@ -25,7 +25,7 @@ body {
   bottom: 0;
   left: 0;
   min-height: 100px;
-  background: #4e5d6c;
+  background: #8ed141;
 }
 
 /* The code styles the text at the bottom of the footer */
@@ -35,12 +35,14 @@ body {
   bottom: 0;
   left: 0;
   padding: 5px;
-  background: #1b3146;
+  background: #8ed141;
 }
 
 .navbar {
   padding: 5px;
   margin: 0;
+  background-color: limegreen;
+
 }
 
 /* This CSS styles the ufo icon in the navbar */
@@ -69,7 +71,7 @@ select {
   display: block;
   width: 100%;
   padding: 8px;
-  color: #8e979f;
+  color: #95f195;
   outline: none;
 }
 
@@ -98,7 +100,7 @@ select {
   padding: 20px;
   margin: 0;
   background: black;
-  background-image: url("../images/nasa.jpg");
+  background-image: url("../images/galaxy.jpg");
   background-attachment: fixed;
   background-position: bottom center;
   background-size: cover;
@@ -108,6 +110,8 @@ select {
   margin-top: 200px;
   font-size: 0.1rem;
   animation: title 1.2s forwards linear;
+  color: limegreen;
+  font-family: fantasy;
 }
 
 .hero p {
@@ -115,27 +119,29 @@ select {
   opacity: 0;
   animation: subtitle 1.2s forwards linear;
   animation-delay: 1.2s;
+  color: limegreen;
+  font-family: fantasy;
 }
 
 /* input placeholder color changes */
 .form-control::-webkit-input-placeholder {
   /* Chrome/Opera/Safari */
-  color: #8e979f;
+  color: #95f195;
 }
 
 .form-control::-moz-placeholder {
   /* Firefox 19+ */
-  color: #8e979f;
+  color: #95f195;
 }
 
 .form-control:-ms-input-placeholder {
   /* IE 10+ */
-  color: #8e979f;
+  color: #95f195;
 }
 
 .form-control:-moz-placeholder {
   /* Firefox 18- */
-  color: #8e979f;
+  color: #95f195;
 }
 
 /* media queries which will only be activated at specific screen sizes */
