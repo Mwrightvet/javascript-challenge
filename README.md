@@ -9,7 +9,7 @@
 3. Add **html** files and static folder containing the javascript as main script to run for analysis.
 
  
-### Level 1: Automatic Table and Date Search (Required)
+### Automatic Table and Date Search (Required)
 
 * Create a basic HTML web page or use the [index.html](StarterCode/index.html) file provided (  buil a custom page!).
 
