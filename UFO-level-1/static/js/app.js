@@ -1,50 +1,63 @@
-// from data.js
-var tableData = data;
+
 
 // YOUR CODE HERE!
 // Assign the data from `data.js` to a descriptive variable
 var tableData = data;
 
-// Select the button
-var button = d3.select("#button");
+//load the data of UFO Sightings into rows 
+
+var tableBody = d3.select('tbody');
+
+for (let index = 0; index < tableData.length; index++) {
+  var dictionary = tableData[index];
+  //build empty row to hold cell data 
+  var row = tableBody.append('tr') 
+  row.append('td').text(dictionary['datetime']); 
+  row.append('td').text(dictionary['city']); 
+  row.append('td').text(dictionary['state']);
+  row.append('td').text(dictionary['country']); 
+  row.append('td').text(dictionary['shape']); 
+  row.append('td').text(dictionary['durationMinutes']);
+  row.append('td').text(dictionary['comments']);
+
+};
+
+
+// Select the filter button
+var button = d3.select("#filter-btn");
 
 button.on("click", function() {
 
+  //prevent page from refreshing is a must. By default the pages refresh for button click. 
+d3.event.preventDefault()
+
   // Select the input element and get the raw HTML node
-  var inputElement = d3.select("#patient-form-input");
+  var inputElement = d3.select("#datetime");
 
   // Get the value property of the input element
   var inputValue = inputElement.property("value");
-
   console.log(inputValue);
-  console.log(people);
 
-  var filteredData = people.filter(person => person.bloodType === inputValue);
+  var filteredData = tableData.filter(dictionary => dictionary.datetime === inputValue);
 
+  // clear table before new filter
+tableBody.html("")
+// input filtered data with the loop to select the dictionary of filtered data
+
+for (let index = 0; index < filteredData.length; index++) {
+  var dictionary = filteredData[index];
+  //build empty row to hold cell data 
+  var row = tableBody.append('tr') 
+  row.append('td').text(dictionary['datetime']); 
+  row.append('td').text(dictionary['city']); 
+  row.append('td').text(dictionary['state']);
+  row.append('td').text(dictionary['country']); 
+  row.append('td').text(dictionary['shape']); 
+  row.append('td').text(dictionary['durationMinutes']);
+  row.append('td').text(dictionary['comments']);
+
+};
+  
   console.log(filteredData);
 
-  // BONUS: Calculate summary statistics for the age field of the filtered data
-
-  // First, create an array with just the age values
-  var ages = filteredData.map(person => person.age);
-
-  // Next, use math.js to calculate the mean, median, mode, var, and std of the ages
-  var mean = math.mean(ages);
-  var median = math.median(ages);
-  var mode = math.mode(ages);
-  var variance = math.var(ages);
-  var standardDeviation = math.std(ages);
-
-  // Then, select the unordered list element by class name
-  var list = d3.select(".summary");
-
-  // remove any children from the list to
-  list.html("");
-
-  // append stats to the list
-  list.append("li").text(`Mean: ${mean}`);
-  list.append("li").text(`Median: ${median}`);
-  list.append("li").text(`Mode: ${mode}`);
-  list.append("li").text(`Variance: ${variance}`);
-  list.append("li").text(`Standard Deviation: ${standardDeviation}`);
 });
