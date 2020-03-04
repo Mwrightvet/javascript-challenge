@@ -23,4 +23,9 @@
 
 * [UFO Sightings Data](StarterCode/static/js/data.js)
 
- 
+ ### Website Screenshots 
+
+ ![website](Images/website_page.png)
+
+
+![search](Images/filtered_search.png)
