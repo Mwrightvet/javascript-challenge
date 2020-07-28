@@ -4,9 +4,7 @@ By: Melissa Wright.
 ## The Task
  
 1. Create a new repository  called `javascript-challenge`.  
-
 2. Create folders: **UFO-level-1** and **UFO-level-2**.
-
 3. Add **html** files and static folder containing the javascript as main script to run for analysis.
 
 ### Challenge: Create Automatic Table and Date Search (User-Interactive Website)
