@@ -8,8 +8,9 @@
 
 3. Add **html** files and static folder containing the javascript as main script to run for analysis.
 
+### Challenge 
  
-### Automatic Table and Date Search (Required)
+### Create Automatic Table and Date Search (User-Interactive Website)
 
 * Create a basic HTML web page or use the [index.html](StarterCode/index.html) file provided (customize page).
 
