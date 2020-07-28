@@ -8,9 +8,7 @@
 
 3. Add **html** files and static folder containing the javascript as main script to run for analysis.
 
-### Challenge 
- 
-### Create Automatic Table and Date Search (User-Interactive Website)
+### Challenge: Create Automatic Table and Date Search (User-Interactive Website)
 
 * Create a basic HTML web page or use the [index.html](StarterCode/index.html) file provided (customize page).
 
@@ -24,9 +22,10 @@
 
 * [UFO Sightings Data](StarterCode/static/js/data.js)
 
- ### Website Screenshots 
+ ### Completed Project: Website Screenshots illustrating UFO Sighting Searches
 
  ![website](Images/website_page.png)
 
 
 ![search](Images/filtered_search.png) 
+
