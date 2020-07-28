@@ -1,5 +1,5 @@
 # JavaScript Website Project using UFO Sightings database, and creating an interactive dashboard. 
------- 
+ 
 By: Melissa Wright. 
 --
 ## The Task
