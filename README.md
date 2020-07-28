@@ -2,7 +2,7 @@
 By: Melissa Wright. 
 -------
 ## The Task
-
+ 
 1. Create a new repository  called `javascript-challenge`.  
 
 2. Create folders: **UFO-level-1** and **UFO-level-2**.
