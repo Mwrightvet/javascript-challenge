@@ -1,4 +1,6 @@
-# javascript-challenge
+# JavaScript Website Project using UFO Sightings database, and creating an interactive dashboard. 
+--------------------------
+
 
 ## The Task
 
