@@ -1,7 +1,6 @@
 # JavaScript Website Project using UFO Sightings database, and creating an interactive dashboard. 
- 
 By: Melissa Wright. 
---
+-------
 ## The Task
 
 1. Create a new repository  called `javascript-challenge`.  
